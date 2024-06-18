@@ -1,0 +1,11 @@
+.user-container {
+  position: relative;
+  height: calc(100vh - 112px);
+  width: 100%;
+  >.add-btn{
+    position: absolute;
+    right: 48px;
+    bottom: 48px;
+  }
+
+}

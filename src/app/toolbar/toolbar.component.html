@@ -6,19 +6,20 @@
     <span>Simple CRM</span>
 
   </mat-toolbar>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
     <div class="logo-container">
       <p>Logo</p>
     </div>
     <ul>
-      <li>Dashboard</li>
-      <li>User</li>
+      <li routerLink="dashboard" >Dashboard</li>
+      <li routerLink="user">User</li>
     </ul>
 
   </mat-drawer>
 
-  <div class="example-sidenav-content">
-
+  <div class="routes-container">
+    <router-outlet />
   </div>
+
 
 </mat-drawer-container>
