@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import {MatInputModule} from '@angular/material/input';
-import {FormControl, FormGroup, ReactiveFormsModule,Validators,FormsModule, FormBuilder} from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+  FormsModule,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-user-dialog',
@@ -14,7 +20,7 @@ export class UserDialogComponent {
   userFormControl = new FormControl();
 
 
-  constructor(private fb: FormBuilder,) {
+  constructor() {
     this.userFormGroup = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email, Validators.minLength(3), Validators.pattern('^[a-zA-ZäöüÄÖß0-9]+(\.[a-zA-ZäöüÄÖß0-9]+)*@[a-zA-ZäöüÄÖß0-9]+\.[a-zA-Z]{2,}$')]),
     });
