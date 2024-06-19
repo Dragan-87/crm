@@ -1,1 +1,15 @@
-<p>user-dialog works!</p>
+
+<form class="add-user-form" [formGroup]="userFormGroup">
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput 
+           placeholder="Enter e-mail">
+    <mat-hint>Errors appear instantly!</mat-hint>
+    @if (true) {
+      <mat-error>Please enter a valid email address</mat-error>
+    }
+    @if (false) {
+      <mat-error>Email is <strong>required</strong></mat-error>
+    }
+  </mat-form-field>
+</form>

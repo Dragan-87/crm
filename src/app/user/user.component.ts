@@ -5,6 +5,7 @@ import { UserDialogComponent } from './user-dialog/user-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 
 
+
 @Component({
   selector: 'app-user',
   standalone: true,
@@ -15,7 +16,7 @@ import { MatDialog } from '@angular/material/dialog';
 export class UserComponent {
 
   constructor(private dialog: MatDialog) {
-    
+
   }
 
   openDialog() {
